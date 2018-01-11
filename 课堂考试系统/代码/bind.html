@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-size: 1em;
+        }
+        header{
+            font-size: 2em;
+            line-height: 1.5em;
+            margin:1.8em auto 2.5em;
+
+        }
+        p{
+            text-align: center;
+            font-weight: 500;
+        }
+        #content{
+            width: 70%;
+            margin: auto;
+        }
+        .item,
+        form{
+            text-align: center;
+        }
+        .item{
+            margin-bottom: 2em;
+        }
+
+        label{
+            position: absolute;
+            line-height:2.5em;font-size: 1.8em;margin-left: -2.3em;
+        }
+        input{
+            margin-left:2em;
+            width:20em;
+			height:2.8em;
+            line-height: 2.8em;
+            border:1px solid #111;
+            text-indent: 0.5em;
+            font-size: 1.5em;
+      
+        }
+        button{
+            width: 16em;
+            text-align: center;
+            font:400 1.3em/2.8em "weiruanyahei";
+            background-color: rgba(0,0,0,0.7);
+            color:#fff;
+            margin:4.7em auto 0;
+        }
+        input,
+        button{
+            margin-bottom: 2.2em;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <p>信息绑定</p>
+</header>
+<div id='content'>
+   <form name='form1' action='http://202.119.206.221/WeChat/stu.php' method='post'>
+        <div class='item'>
+            <label for='1'>姓名:</label><input id='1' name='username' type='text' placeholder='请输入姓名' required pattern='^[\u4e00-\u9fa5]+(·[\u4e00-\u9fa5]+)*$'   oninput='setCustomValidity('');' autofocus>
+        </div>
+        <div class='item'>
+            <label for='11'>学号:</label><input id='11' name='userid' type='text' placeholder='请输入学号'  required pattern='^[01]\d{7}$'>
+        </div>
+        <div class='item'>
+            <label for='2'>班级:</label><input id='2' name='userclass' type='text' placeholder='计算机14-01' required pattern='[\u4e00-\u9fa5]{2,5}\d{2}-\d{1,2}'>
+        </div>
+        <div class='item'>
+             <label for='private_phone'>手机号:</label><input  id='private_phone' name='private_phone' required pattern='(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$'   oninput='setCustomValidity('');'  type='text' />
+        </div>
+		
+        <button>确认提交</button>
+    </form>
+</div>
+<p>abdfsdfsfsc1</p>";
+
+</body>
+</html>
